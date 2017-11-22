@@ -1,0 +1,39 @@
+// GEARS
+// -----------------------------------------------------------------
+.clsg-1 { fill: #babfc3; }
+.clsg-2 { fill: #154f51; }
+.clsg-3, .clsg-6 {
+font-size: 24px;
+font-family: Roboto-Bold, Roboto;
+font-weight: 700;
+}
+.clsg-3 { fill: #fff; }
+.clsg-4 { letter-spacing: -0.02em; }
+.clsg-5 { fill: #89c348; }
+.clsg-6 { fill: #092223; }
+.clsg-7 { letter-spacing: -0.02em; }
+.clsg-8 { fill: #123054; }
+
+.clsg-2,
+.clsg-8,
+// .clsg-6,
+.clsg-5 {
+  &:hover {
+    fill: find-color(primary);
+  }
+}
+
+
+.gear3v {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.g-variability,
+.g-velocity,
+.g-visibility {
+  &:hover {
+    cursor: pointer;
+  }
+}

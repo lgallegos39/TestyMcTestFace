@@ -1,0 +1,70 @@
+﻿WEBVTT
+
+1
+00:00:00.177 --> 00:00:03.439
+If there is inaccurate data in the inventory points,
+
+2
+00:00:03.439 --> 00:00:05.353
+a negative effect cascades
+
+3
+00:00:05.353 --> 00:00:07.740
+through the whole inventory system.
+
+4
+00:00:07.740 --> 00:00:10.657
+For example, let's say the inventory manager
+
+5
+00:00:10.657 --> 00:00:13.748
+orders 10 cases of medium-sized gloves.
+
+6
+00:00:13.748 --> 00:00:16.745
+Each case contains 100 boxes of gloves.
+
+7
+00:00:16.745 --> 00:00:19.208
+The inventory manager gets distracted
+
+8
+00:00:19.208 --> 00:00:21.889
+and accidentally enters the incorrect information
+
+9
+00:00:21.889 --> 00:00:24.737
+of the case containing 10 boxes of gloves.
+
+10
+00:00:24.737 --> 00:00:27.324
+As a result, when the gloves come in,
+
+11
+00:00:27.324 --> 00:00:30.445
+a total of 100 boxes of gloves are received in
+
+12
+00:00:30.445 --> 00:00:34.746
+when in reality it would be 1000 boxes of gloves received.
+
+13
+00:00:34.746 --> 00:00:39.030
+As a result, the primary is short 900 boxes of gloves.
+
+14
+00:00:39.030 --> 00:00:41.965
+When they are distributed to the secondary areas,
+
+15
+00:00:41.965 --> 00:00:44.057
+the primary will alert you to order
+
+16
+00:00:44.057 --> 00:00:46.444
+after the 100 boxes are used,
+
+17
+00:00:46.444 --> 00:00:49.663
+even if there are 900 boxes still on the shelf.
+

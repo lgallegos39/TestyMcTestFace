@@ -1,0 +1,129 @@
+[
+  {
+  "name" : "AAMS",
+  "value": "Agency Asset Management System"
+  }, {
+  "name" : "AEMS/MERS",
+  "value":"Automated Engineering Management System/Medical Equipment Reporting System "
+  }, {
+  "name" : "AO",
+  "value": "Accountable Officer"
+  }, {
+  "name" : "CSN",
+  "value": "Category Stock Number"
+  }, {
+  "name" : "CWT",
+  "value": "Compensated Work Therapy"
+  }, {
+  "name" : "DLA",
+  "value": "Defense Logistics Agency"
+  }, {
+  "name" : "DOD",
+  "value": "Department of Defense"
+  }, {
+  "name" : "DUSHOM",
+  "value": "Deputy Under Secretary for Health for Operations and Management"
+  }, {
+  "name" : "DVA",
+  "value": "Department of Veteran Affairs"
+  }, {
+  "name" : "EE",
+  "value": "Equipment Entry"
+  }, {
+  "name" : "EIL",
+  "value": "Equipment Inventory Listing"
+  }, {
+  "name" : "ELO",
+  "value": "Enabling Learning Objective"
+  }, {
+  "name" : "FMR",
+  "value": "Federal Management Regulations"
+  }, {
+  "name" : "FSS",
+  "value": "Federal Supply Schedule"
+  }, {
+  "name" : "GIP",
+  "value": "Generic Inventory Package"
+  }, {
+  "name" : "GSA",
+  "value": "General Services Administration"
+  }, {
+  "name" : "IDIQ",
+  "value": "Indefinite Delivery/Indefinite Quantity"
+  }, {
+  "name" : "ISO",
+  "value": "Information Security Officer"
+  }, {
+  "name" : "MCCF",
+  "value": "Medical Care Collections Fund"
+  }, {
+  "name" : "MQAS",
+  "value": "Management Quality Assurance Service"
+  }, {
+  "name" : "NAC",
+  "value": "National Acquisition Center"
+  }, {
+  "name" : "NCA",
+  "value": "National Cemetaries Administration"
+  }, {
+  "name" : "NCPS",
+  "value": "The National Center for Patient Safety"
+  }, {
+  "name" : "NER",
+  "value": "Network External Review"
+  }, {
+  "name" : "NSN",
+  "value": "National Stock Number"
+  }, {
+  "name" : "NX",
+  "value":"Non-expendable"
+  }, {
+  "name" : "OIG",
+  "value": "Office of Inspector General"
+  }, {
+  "name" : "OIT",
+  "value": "Office of Information Technology"
+  }, {
+  "name" : "P&LO",
+  "value": "Procurement and Logistics Organization"
+  }, {
+  "name" : "PCDM",
+  "value": "Purchase Card Data Mining"
+  }, {
+  "name" : "PHI",
+  "value": "Protective Health Information"
+  }, {
+  "name" : "PII",
+  "value": "Personally Identifiable Information"
+  }, {
+  "name" : "ROS",
+  "value": "Report of Survey"
+  }, {
+  "name" : "SCMS",
+  "value": "Supply Chain Management School"
+  }, {
+  "name" : "SOP",
+  "value": "Standard Operating Procedure"
+  }, {
+  "name" : "TJC",
+  "value": "The Joint Commission"
+  }, {
+  "name" : "UNICOR",
+  "value": "Federal Prison Industries"
+  }, {
+  "name" : "VA",
+  "value": "Veterans Affairs"
+  }, {
+  "name" : "VBA",
+  "value": "Veterans Business Administration"
+  }, {
+  "name" : "VHA",
+  "value": "Veterans Health Administration"
+  }, {
+  "name" : "VistA",
+  "value": "Veterans Health Information Systems and Technology Architecture"
+  }, {
+  "name" : "VISN",
+  "value": "Veterans Integrated Service Network"
+  }
+]

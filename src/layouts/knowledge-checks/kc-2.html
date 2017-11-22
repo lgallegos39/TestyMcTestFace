@@ -1,0 +1,19 @@
+{{> course-html-head page-hdr='true' }}
+
+<div class="{{wrap}} o-box o-mh-pad-w-title c-dnd v-intro">
+  {{> body}}
+
+  <div data-closable id="divFeedBack" class="c-feedback c-dnd__feedback">
+    <div class='c-feedback__inner'>
+    <h2 id="hdrFeedback" class="c-feedback__heading"></h2>
+    <div id="pFeedback" class="c-dnd__fb-text"></div>
+    {{!-- <div id="qRepeat" class="c-dnd__fb-text"></div> --}}
+    {{> close-button}}
+    <div class="u-mt-md">
+      <button id="btnCloseFeedback" class="l-kc1__btn c-btn c-btn--quiet -md -outline u-mb-base" onclick="feedbackClose();">Continue</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+{{> course-html-footer }}

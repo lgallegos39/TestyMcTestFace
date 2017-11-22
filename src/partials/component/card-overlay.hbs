@@ -1,0 +1,14 @@
+<div class="c-card-overlay c-card-overlay--{{dir}}">
+  <div class="c-card-overlay__media">
+    <img src="{{root}}assets/img/{{src}}" alt="{{alt}}">
+  </div>
+  <div class="c-card-overlay__pos">
+    <div class="c-card-overlay__body">
+      <div class="c-card-overlay__inner {{class}}">
+        {{#if @partial-block}}
+          {{> @partial-block}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

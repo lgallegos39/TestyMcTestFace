@@ -1,0 +1,46 @@
+﻿WEBVTT
+
+1
+00:00:00.560 --> 00:00:03.016
+There are systems that are used for data collection
+
+2
+00:00:03.016 --> 00:00:06.342
+which will measure our key performance indicators.
+
+3
+00:00:06.342 --> 00:00:08.492
+In the VistA inventory system,
+
+4
+00:00:08.492 --> 00:00:11.957
+our key performance indicators are turn rate,
+
+5
+00:00:11.957 --> 00:00:15.207
+long supply, inactive, and null fields.
+
+6
+00:00:16.569 --> 00:00:20.538
+For instance, the data you input into GIP
+
+7
+00:00:20.538 --> 00:00:23.948
+has to be accurate, or it can throw off your inventory,
+
+8
+00:00:23.948 --> 00:00:26.243
+which, in turn, gets reported.
+
+9
+00:00:26.243 --> 00:00:29.295
+If you enter the wrong price or amount on hand,
+
+10
+00:00:29.295 --> 00:00:31.397
+you can throw your on-hand stock
+
+11
+00:00:31.397 --> 00:00:34.978
+or on-hand dollar amount off by millions of dollars.
+

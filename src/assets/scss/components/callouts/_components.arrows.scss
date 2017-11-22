@@ -1,0 +1,140 @@
+///////////////////////////////////////////////////////////////////////
+//
+// A COLLECTION OF REUSABLE ARROWS
+//
+// ///////////////////////////////////////////////////////////////////
+
+$arrow-mh: spacing(42px);
+$arrow-fs: font-size(md);
+$arrow-fw: null;
+$arrow-fc: null;
+$arrow-lh: spacing(1);
+
+$arrow-aw: spacing(30px);
+$arrow-ah: spacing(60px);
+$arrow-dir: right;
+
+$arrow-bg: find-color(white);
+
+$arrow-wrap-width: $arrow-aw * 2;
+$arrow-trans: all .3s ease-in-out;
+
+$arrow-tb: pad-height($arrow-mh,$arrow-lh,0);
+$arrow-lr: spacing(0.75);
+$arrow-mtb: (rem($arrow-ah) - rem($arrow-mh)) / 2;
+
+$arrow-bg-h: find-color(secondary);
+$arrow-fc-h: find-color(secondary, dark);
+
+$arrow-bg-a: find-color(accent,dark);
+$arrow-fc-a: find-color(white);
+
+
+
+// IMPORTS
+// -------------------------------------------------------------------
+
+.c-arrow-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-arrow {
+  position: relative;
+  display: block;
+  padding: $arrow-tb $arrow-lr;
+  margin: (rem($arrow-mtb) + rem(3px)) $arrow-aw;
+  font-size: $arrow-fs;
+  line-height: $arrow-lh;
+  font-weight: $arrow-fw;
+  color: $arrow-fc;
+  text-align: center;
+  background-color: $arrow-bg;
+  width: calc(100% - #{$arrow-wrap-width});
+  transition: $arrow-trans;
+
+  &:after,
+  &:before {
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(($arrow-ah / 2) * -1);
+    transition: $arrow-trans;
+  }
+
+  &:after {
+    left: 100%;
+    @include triangle($arrow-ah $arrow-aw,$arrow-bg,right);
+  }
+
+  &:before {
+    right: 100%;
+    @include triangle($arrow-ah $arrow-aw,$arrow-bg,left);
+  }
+
+  > :last-child { margin-bottom: 0; }
+
+
+  // Add the ability to hover
+  &.-hover {
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $arrow-fc-h;
+      background-color: $arrow-bg-h;
+      box-shadow: $base-shadow-common;
+
+      &:before { border-right-color: $arrow-bg-h; }
+      &:after { border-left-color: $arrow-bg-h; }
+
+    }
+  }
+
+
+  // add highlight state
+  &.-highlight {
+    color: $arrow-fc-a;
+    background-color: $arrow-bg-a;
+
+    &:before { border-right-color: $arrow-bg-a; }
+    &:after { border-left-color: $arrow-bg-a; }
+
+    &:hover,
+    &:focus {
+      color: $arrow-fc-a;
+      background-color: darken($arrow-bg-a,5%);
+
+      &:before { border-right-color: darken($arrow-bg-a,5%); }
+      &:after { border-left-color: darken($arrow-bg-a,5%); }
+    }
+
+  }
+
+
+  // left arrow only
+  &.-left {
+    width: calc(100% - #{$arrow-wrap-width / 2});
+    margin-right: 0;
+    &:after { display: none;}
+  }
+
+  // right arrow only
+  &.-right {
+    width: calc(100% - #{$arrow-wrap-width / 2});
+    margin-left: 0;
+    &:before { display: none;}
+  }
+
+  // centers arrow so edges line up with arrow start
+  // useful for stacking arrow that mix directions
+  &.-center {
+    width: calc(100% - #{$arrow-wrap-width});
+    margin-left: $arrow-aw;
+    margin-right: $arrow-aw;
+  }
+
+
+
+
+}

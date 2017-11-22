@@ -1,0 +1,86 @@
+﻿WEBVTT
+
+1
+00:00:00.176 --> 00:00:02.781
+On this screen you will be prompted to enter
+
+2
+00:00:02.781 --> 00:00:04.784
+the BOC of the second line item.
+
+3
+00:00:04.784 --> 00:00:07.920
+A BOC will be needed for every line item in the order.
+
+4
+00:00:07.920 --> 00:00:10.769
+After entering the quantity, you will enter the unit
+
+5
+00:00:10.769 --> 00:00:14.598
+of purchase, stock number, and estimated item cost.
+
+6
+00:00:14.598 --> 00:00:17.134
+You will bypass the delivery schedule.
+
+7
+00:00:17.134 --> 00:00:19.676
+Once you complete the order for the total number of line
+
+8
+00:00:19.676 --> 00:00:23.182
+items then press enter to go to the next step.
+
+9
+00:00:23.182 --> 00:00:26.633
+In this example we are only ordering two items.
+
+10
+00:00:26.633 --> 00:00:29.382
+So, we will move on to the next prompt.
+
+11
+00:00:29.382 --> 00:00:31.871
+Press enter to bypass the sub-control point
+
+12
+00:00:31.871 --> 00:00:33.740
+unless otherwise specified.
+
+13
+00:00:33.740 --> 00:00:36.539
+In this example we will bypass.
+
+14
+00:00:36.539 --> 00:00:39.412
+Next, you will put in the delivery location.
+
+15
+00:00:39.412 --> 00:00:41.318
+You are limited to 30 characters,
+
+16
+00:00:41.318 --> 00:00:43.595
+so be concise within the limitations,
+
+17
+00:00:43.595 --> 00:00:45.683
+such as room number and building,
+
+18
+00:00:45.683 --> 00:00:47.981
+with a person's name if possible to allow
+
+19
+00:00:47.981 --> 00:00:49.597
+for accurate delivery.
+
+20
+00:00:49.597 --> 00:00:52.544
+Under the justification enter a brief comment
+
+21
+00:00:52.544 --> 00:00:55.014
+on why you are ordering the items.
+

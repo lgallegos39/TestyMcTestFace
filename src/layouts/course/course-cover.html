@@ -1,0 +1,26 @@
+{{> course-html-head main="u-bg-dark-blue" lesson="Course Introduction" }}
+
+<article class="o-box o-mh-pad l-cover v-hide">
+  <aside class="o-box__cell l-cover__media v-hide">
+    {{> body}}
+  </aside>
+  <section class="o-box__cell l-cover__body">
+
+    <div class="l-cover__sub v-hide">
+      {{ global.course-id }}
+    </div>
+    <h3 class="l-cover__heading v-hide">
+      {{ global.course }}
+    </h3>
+    <div class="l-cover__school v-hide">
+      {{ global.client }}
+    </div>
+
+    {{#> callout type="cover" mod="action" class="v-hide"}}
+      This course is targeted for all Supply Chain Management Professionals
+    {{/callout}}
+
+  </section>
+</article>
+
+{{> course-html-footer }}

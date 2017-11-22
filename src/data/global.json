@@ -1,0 +1,56 @@
+{
+  "course": "Introduction to Supply Chain Fundamentals",
+  "course-id": "FLG107",
+  "client" : "Supply Chain Management School",
+  "skill-level": "Introductory",
+  "columns": 12,
+  "version": 0.1,
+  "module": [
+    {
+      "name" : "Welcome",
+      "lesson" : []
+    }, {
+      "name" : "What is Supply Chain Management?",
+      "lesson" : [
+        "What is Supply Chain Management?",
+        "Supply Chain Management Objectives",
+        "Key Terms",
+        "VHA Supply Chain",
+        "Policies and References",
+        "Customer Service"
+      ]
+    }, {
+      "name" : "How SCM Supports the Mission",
+      "lesson" : [
+        "Where Does SCM Fit In?",
+        "The Importance of Logistics",
+        "Understanding your Value Proposition",
+        "Customer Service"
+      ]
+    }, {
+      "name" : "VHA Transformation, Roles, & Responsibilities, Structure & Functions in Supply Chain",
+        "lesson" : [
+        "Supply Chain Transformation & Organizational Structure",
+        "VHA Structure & How Positions  interact in Supply Chain",
+        "Competencies Developed through Career Progression",
+        "Customer Service"
+      ]
+    }, {
+      "name" : "Operations",
+      "lesson" : [
+        "Governance",
+        "Facility",
+        "Movement through Logistics",
+        "Customer Service"
+      ]
+    }, {
+      "name" : "Data",
+      "lesson" : [
+        "Data Integrity",
+        "Performance Analysis/Metrics",
+        "Actionable Information",
+        "Customer Service"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+///////////////////////////////////////////////////////////////////////
+//
+// BUTTONS
+//
+// ///////////////////////////////////////////////////////////////////
+
+
+// VARIABLES
+// -------------------------------------------------------------------
+$btn-class: c-btn;
+$btn-transition: all 0.25s ease-out, color 0.25s ease-out;
+$btn-mh: get-height(base);
+$btn-mb: spacing(md);
+$btn-fs: null;
+$btn-fw: $global-weight-normal;
+$btn-lh: line-height(1);
+$btn-bw: 2px;
+$btn-br: 3px;
+$btn-lr: spacing(base);
+
+
+// get types from $course-palette
+$allow-btn-sizes: (xs sm md lg xl xxl );
+$allow-btn-colors: (accent secondary alert warning success info quiet disabled);
+
+
+
+// BUTTON STYLES
+// -------------------------------------------------------------------
+@mixin btn-base (
+  $mh: $btn-mh,
+  $mb: $btn-mb,
+  $tb: null,
+  $lr: $btn-lr,
+  // styles
+  // font styles
+  $fs: $btn-fs,
+  $fw: $btn-fw,
+  $lh: $btn-lh,
+  $fc: find-color(white),
+  // border/bg styles
+  $bg: find-color(primary,dark),
+  $bw: $btn-bw,
+  $bc: $bg,
+  $br: $btn-br
+) {
+
+  $tb: pad-height($mh, $lh, $bw);
+
+  @include disable-mouse-outline;
+  display: inline-block;
+  margin-bottom: $mb;
+  padding: $tb $lr;
+  vertical-align: middle;
+
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+  text-align: center;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  border-width: $bw;
+  border-style: solid;
+  border-color: $bc;
+  border-radius: $br;
+  transition: $btn-transition;
+}
+
+
+
+// Button Styles
+// -------------------------------------------------------------------
+@mixin btn-style(
+  $bg:  find-color(primary),
+  $bg-h: auto,
+  $fc:   auto, //find-color(white),
+  $scale: 20%
+) {
+
+  @if $fc == auto {
+    $fc: color-pick-contrast($bg, (find-color(white), $header-color));
+  }
+
+  @if $bg-h == auto {
+    $bg-h: scale-color($bg, $lightness: $scale);
+  }
+
+  background-color: $bg;
+  border-color: $bg;
+  color: $fc;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-h !important;
+    border-color: $bg-h;
+    color: $fc !important;
+  }
+
+  > .o-icon {
+    margin-bottom: -2px;
+    vertical-align: top;
+  }
+
+}
+
+
+
+// Button Expand
+// -------------------------------------------------------------------
+@mixin btn-expand($expand: true) {
+  @if $expand {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+// Button Disabled Styles
+// -------------------------------------------------------------------
+@mixin btn-disabled (
+  $bg: map-get($button-palette, disabled),
+  $fc: find-color(text, light),
+  $opacity: 1
+) {
+  opacity: $opacity;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: $fc;
+  // text-decoration: line-through;
+  background-color: $bg;
+  border-color: $bg;
+
+  &:hover,
+  &:focus {
+    color: $fc;
+    border-color: $bg;
+    background-color: $bg;
+  }
+
+  &.-outline {
+    color: $fc;
+  }
+
+}
+
+
+
+// Button Rounded Styles
+// -------------------------------------------------------------------
+@mixin btn-rounded (
+  $br: 100px
+) {
+  border-radius: $br !important;
+}
+
+
+
+// Button Outline Styles
+// -------------------------------------------------------------------
+@mixin btn-outline (
+  $fc: inherit
+) {
+  color: $fc;
+  background-color: transparent;
+
+  &.-disabled,
+  &[disabled] {
+    &:focus,
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+}
+
+
+
+// Button w/ icon
+// -------------------------------------------------------------------
+@mixin btn-icon(
+  $mh:  $btn-mh,
+  $lh:  $btn-lh,
+  $bw:  $btn-bw,
+  $lr:  $btn-lr,
+  $class: o-icon,
+  $el: span
+) {
+
+  $tb: pad-height($mh, $lh, $bw);
+
+  padding-left: $tb;
+  padding-right: $tb;
+
+  #{$el}:first-child {
+    margin-left: $lr;
+    margin-right: $lr;
+  }
+
+  #{$el}:last-child {
+    margin-right: $lr;
+    margin-left: $tb * 2;
+  }
+
+  @each $size, $key in $base-height {
+    $tb: pad-height($size, $lh, $bw);
+    &.-#{$size} {
+      padding-left: $tb;
+      padding-right: $tb;
+
+      > :last-child:not(:first-child) {
+        margin-left: $tb;
+      }
+
+    }
+  }
+
+}
+
+@mixin btn-colors {
+
+  @each $key, $value in $gts-palette {
+    @if index($allow-btn-colors, $key) {
+      &--#{$key} {
+        @include btn-style(
+          $value, auto, auto
+        );
+      }
+    }
+  }
+
+}
+
+
+@mixin btn-sizes(
+  $mh:  $btn-mh,
+  $lh:  $btn-lh,
+  $bw:  $btn-bw,
+  $lr:  $btn-lr
+) {
+
+  @each $size, $key in $base-height {
+    @if index($allow-btn-sizes, $size) {
+      // @debug 'SIZES:' $key;
+      $tb: pad-height($key, $lh, $bw);
+
+      &.-#{$size} {
+        padding-top: $tb;
+        padding-bottom: $tb;
+        padding-left: $lr;
+        padding-right: $lr;
+      }
+    }
+  }
+}
+
+
+
+// Button Classes
+// -------------------------------------------------------------------
+.#{$btn-class} {
+  @include btn-base;
+  @include btn-style;
+
+  &.-expand {
+    @include btn-expand;
+  }
+
+  &.-disabled,
+  &[disabled] {
+    @include btn-disabled;
+  }
+
+  &.-rounded {
+    @include btn-rounded;
+  }
+
+  &.-outline {
+    @include btn-outline;
+  }
+
+  &.-icon {
+    @include btn-icon;
+  }
+
+  @include btn-colors;
+
+  @include btn-sizes;
+
+}

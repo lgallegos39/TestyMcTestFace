@@ -1,0 +1,114 @@
+﻿WEBVTT
+
+1
+00:00:00.440 --> 00:00:04.577
+There are several sources or causes of data inaccuracy.
+
+2
+00:00:04.577 --> 00:00:07.195
+At first it can be something as simple as entering the
+
+3
+00:00:07.195 --> 00:00:10.787
+wrong value or making a typo when initially entering data
+
+4
+00:00:10.787 --> 00:00:12.113
+into the system.
+
+5
+00:00:12.113 --> 00:00:15.139
+Over time, data values which started out accurately
+
+6
+00:00:15.139 --> 00:00:17.046
+can become inaccurate.
+
+7
+00:00:17.046 --> 00:00:20.312
+For example, let's say a facility uses Medline
+
+8
+00:00:20.312 --> 00:00:21.971
+for small purchases.
+
+9
+00:00:21.971 --> 00:00:24.085
+They don't order often from this company,
+
+10
+00:00:24.085 --> 00:00:27.858
+but with enough frequency to keep them in the vendor file.
+
+11
+00:00:27.858 --> 00:00:28.908
+After three years,
+
+12
+00:00:28.908 --> 00:00:31.874
+the vendor has changed their payment address.
+
+13
+00:00:31.874 --> 00:00:34.759
+If the inventory manager does not update this information
+
+14
+00:00:34.759 --> 00:00:37.113
+in a timely manner, then there can be delays
+
+15
+00:00:37.113 --> 00:00:39.194
+in getting payment to Medline.
+
+16
+00:00:39.194 --> 00:00:41.683
+This damages our relationship with this vendor
+
+17
+00:00:41.683 --> 00:00:44.516
+and can create a myriad of other problems as well.
+
+18
+00:00:44.516 --> 00:00:47.294
+Additionally, data movement can be another result
+
+19
+00:00:47.294 --> 00:00:48.903
+of data inaccuracy.
+
+20
+00:00:48.903 --> 00:00:51.373
+This can happen when data moves through an unreliable
+
+21
+00:00:51.373 --> 00:00:52.940
+database system.
+
+22
+00:00:52.940 --> 00:00:55.809
+For example, if gloves were not properly received
+
+23
+00:00:55.809 --> 00:00:58.951
+into the inventory system, it may show that you have
+
+24
+00:00:58.951 --> 00:01:02.955
+zero on hand, but there are really 50 cases on site.
+
+25
+00:01:02.955 --> 00:01:05.841
+As a result of this inaccuracy, you will run into
+
+26
+00:01:05.841 --> 00:01:08.452
+the negative and never really know what quantities
+
+27
+00:01:08.452 --> 00:01:10.983
+you have on hand without inspecting and adjusting
+
+28
+00:01:10.983 --> 00:01:12.150
+the inventory.
+

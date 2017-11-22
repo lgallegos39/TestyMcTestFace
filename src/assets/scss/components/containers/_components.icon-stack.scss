@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////
+//
+// ICON STACK
+//
+// ///////////////////////////////////////////////////////////////////
+
+
+
+// VARIABLES
+// ------------------------------------------------------------------
+.c-icon-stack {
+  text-align: center;
+
+  &__icon {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @include typeset(4);
+    color: find-color(text);
+
+    &.-sm {
+      @include typeset(base);
+    }
+
+    &.-md {
+      @include typeset(lgp);
+    }
+
+  }
+
+}

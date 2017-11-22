@@ -1,0 +1,77 @@
+///////////////////////////////////////////////////////////////////////
+//
+// ICARE PILLARS
+//
+// ///////////////////////////////////////////////////////////////////
+
+$icare1-space: spacing(0.5);
+$icare1-i: 0;
+$icare1-reduce: 24%;
+$icare1-start: find-color(primary,darkest);
+$icare1-end: find-color(accent);
+$icare1-total: 5;
+$icare1-mix: 100% / $icare1-total;
+
+
+// STYLES
+// -------------------------------------------------------------------
+.l-ip-define {
+  position: relative;
+  height: 100%;
+
+  @include breakpoint(medium) {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: $base-shadow-common;
+  }
+
+  &__col {
+    height: 100%;
+    @include gts-box-common;
+    vertical-align: top;
+    text-align: center;
+    vertical-align: middle;
+
+    @include breakpoint(medium) {
+      display: table-cell;
+      width: percentage(1 / 5);
+      height: 100%;
+      padding-top: rem(60px);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+  &__title {
+    @include breakpoint(medium) {
+      position: absolute;
+      top: spacing(0.5);
+      left: spacing(0.5);
+      width: calc(100% - #{$icare1-space * 2});
+    }
+
+  }
+
+
+
+
+}
+
+// Generate Colors
+@for $i from $icare1-i to $icare1-total {
+  $icare1-mix: mix($icare1-start, $icare1-end, percentage($i / ($icare1-total - 1)));
+  .l-ip-define__col {
+    &:nth-child(#{$i + 2}) {
+      background-color: $icare1-mix;
+      .l-ip-define__text {
+        color: color-pick-contrast($icare1-mix, (find-color(white), find-color(text,dark)));
+      }
+    }
+  }
+}

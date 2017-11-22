@@ -1,0 +1,90 @@
+﻿WEBVTT
+
+1
+00:00:00.380 --> 00:00:02.067
+Once you enter the information,
+
+2
+00:00:02.067 --> 00:00:05.297
+the system will generate a transaction number.
+
+3
+00:00:05.297 --> 00:00:07.776
+The transaction will contain the station number,
+
+4
+00:00:07.776 --> 00:00:11.558
+fiscal year, fiscal quarter, control point number,
+
+5
+00:00:11.558 --> 00:00:13.818
+and the sequence number for that order.
+
+6
+00:00:13.818 --> 00:00:16.968
+The form type is to be entered next.
+
+7
+00:00:16.968 --> 00:00:20.405
+Enter double question marks to see all options.
+
+8
+00:00:20.405 --> 00:00:23.391
+For this example, we are using option four,
+
+9
+00:00:23.391 --> 00:00:25.891
+repetitive and non-rep order.
+
+10
+00:00:26.747 --> 00:00:29.388
+The classification of request is a description
+
+11
+00:00:29.388 --> 00:00:31.043
+of what the order will be.
+
+12
+00:00:31.043 --> 00:00:33.312
+The sort group can be left blank.
+
+13
+00:00:33.312 --> 00:00:34.610
+Press enter.
+
+14
+00:00:34.610 --> 00:00:35.852
+The date of request should be
+
+15
+00:00:35.852 --> 00:00:38.889
+the date you are entering the 2237.
+
+16
+00:00:38.889 --> 00:00:42.453
+If you enter T, it will populate today's date.
+
+17
+00:00:42.453 --> 00:00:44.629
+The date required should be provided to you
+
+18
+00:00:44.629 --> 00:00:47.310
+by the person who initiates the request.
+
+19
+00:00:47.310 --> 00:00:49.211
+The priority of request defaults
+
+20
+00:00:49.211 --> 00:00:52.280
+to standard and most often will not be changed.
+
+21
+00:00:52.280 --> 00:00:54.848
+The special remarks is an open text field
+
+22
+00:00:54.848 --> 00:00:57.705
+for any special instructions regarding the order.
+

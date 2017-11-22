@@ -1,0 +1,28 @@
+<video
+  class="mejs__player mejs-player mejs-player--video {{class}}"
+  data-mejsoptions='{
+    "showPosterWhenEnded": "true",
+    "stretching": "responsive",
+    "toggleCaptionsButtonWhenOnlyOne": "true"
+  }'
+  {{#startsWith "http://" poster }}
+    poster="{{poster}}"
+  {{else}}
+    poster="{{root}}assets/img/{{poster}}"
+  {{/startsWith}} >
+
+  {{#startsWith "http://" source}}
+    <source src="{{source}}" type="video/mp4">
+  {{else}}
+    <source src="{{root}}assets/media/audio/{{source}}" type="video/mp4">
+  {{/startsWith}}
+
+  {{#startsWith "http://" track}}
+    <track  src="{{track}}" srclang="en" label="English" kind="subtitles" type="text/vtt">
+  {{else}}
+    <track src="{{root}}assets/media/cc/{{track}}" srclang="en" label="English" kind="subtitles" type="text/vtt">
+  {{/startsWith}}
+</video>
+
+
+

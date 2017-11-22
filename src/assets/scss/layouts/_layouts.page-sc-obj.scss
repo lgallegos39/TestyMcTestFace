@@ -1,0 +1,84 @@
+
+
+.l-scobj {
+
+  &__tbody,
+  &__thead,
+  &__tr,
+  &__th,
+  &__td {
+    background-color: transparent !important;
+  }
+
+  &__th {
+    text-align: center;
+
+    &:nth-child(1) {
+      width: 40%;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+
+    &:nth-child(3) {
+      width: 20%;
+    }
+
+  }
+
+  &__tr {
+    border-bottom: 2px solid find-color(white) !important;
+  }
+
+
+  &__td {
+
+    &:nth-child(2) {
+      position: relative;
+      font-weight: bold;
+      text-align: center;
+      font-size: font-size(md);
+      vertical-align: middle;
+      height: 100%;
+
+      &:before,
+      &:after {
+        content:'';
+        position: absolute;
+        // top:100%;
+        left: 100%;
+        box-sizing: content-box;
+        display: block;
+        @include sprite-common;
+        @include sprite(arrow-fwd);
+        border: 3px solid find-color(white);
+        background-color: find-color(white);
+        border-radius: 50%;
+        z-index: 1;
+        transform: translateX(-50%);
+      }
+
+      &:after {
+        left: 0;
+        right: 100%;
+        transform: translateX(-50%) rotate(180deg);
+      }
+
+
+    }
+
+
+  }
+
+
+ // &__tbody {
+    background-image: url(../img/lrg-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: 500px 436px;
+    background-position: 67.5% top;
+  // }
+
+
+
+}

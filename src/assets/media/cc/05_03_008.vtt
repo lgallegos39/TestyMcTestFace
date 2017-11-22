@@ -1,0 +1,90 @@
+﻿WEBVTT
+
+1
+00:00:00.718 --> 00:00:03.374
+Joe also logs into the DCEP website
+
+2
+00:00:03.374 --> 00:00:06.765
+to look at the null fields report from med-surg.
+
+3
+00:00:06.765 --> 00:00:08.629
+He notices that there are 10 items
+
+4
+00:00:08.629 --> 00:00:10.277
+that are missing information.
+
+5
+00:00:10.277 --> 00:00:12.772
+Are the items in DCEP valid?
+
+6
+00:00:12.772 --> 00:00:17.407
+Do the items need to be removed from the inventory system?
+
+7
+00:00:17.407 --> 00:00:20.743
+Do the items need to be updated in the inventory system?
+
+8
+00:00:20.743 --> 00:00:24.397
+In this example, Joe has checked all of the above
+
+9
+00:00:24.397 --> 00:00:27.664
+and has verified that the items are indeed valid.
+
+10
+00:00:27.664 --> 00:00:30.793
+He finds that on Friday, 10 new items were approved
+
+11
+00:00:30.793 --> 00:00:34.960
+by the CPRC and item master file IMF numbers were created.
+
+12
+00:00:36.368 --> 00:00:40.047
+As a result, the location to place the items was missing.
+
+13
+00:00:40.047 --> 00:00:42.772
+After some research, Joe has found where the items
+
+14
+00:00:42.772 --> 00:00:46.503
+will be placed in the primary and distribution areas.
+
+15
+00:00:46.503 --> 00:00:49.214
+He communicated this information to the clinical staff
+
+16
+00:00:49.214 --> 00:00:50.874
+of that area, and worked with them
+
+17
+00:00:50.874 --> 00:00:53.504
+to set appropriate levels, and created levels
+
+18
+00:00:53.504 --> 00:00:57.267
+in the primary storage area to reflect the correction.
+
+19
+00:00:57.267 --> 00:01:00.365
+He created space for storage, updated the locations
+
+20
+00:01:00.365 --> 00:01:03.373
+in VistA, and created new labels.
+
+21
+00:01:03.373 --> 00:01:06.372
+As a result of the report, Joe was able to update
+
+22
+00:01:06.372 --> 00:01:08.493
+the inventory management system.
+

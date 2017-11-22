@@ -1,0 +1,81 @@
+---
+layout: title-full
+title: Supply Chain Flow
+audio: Yes
+main: u-bg-border
+wrap:
+---
+
+{{#> column col="12" class=""}}
+
+{{> arrow text="Material & Reverse Goods Flow" class="" wrap=""}}
+
+
+<div class="c-pro-card c-pro-card--long">
+
+  <div class="c-pro-card__label">
+    <span class="c-pro-card__text">Upstream</span>
+  </div>
+
+  <div class="c-pro-card__cell">
+    <div class="c-card c-card--icon c-card--process c-pro-card__item ">
+      {{#> icon-stack src="card_raw-materials.png" alt="Icon of raw materials." class="" }}
+        Raw Materials
+      {{/icon-stack}}
+    </div>
+  </div>
+  <div class="c-pro-card__cell">
+    <div class="c-card c-card--icon c-card--process c-pro-card__item">
+      {{#> icon-stack src="card_supplier-2.png" alt="Icon of supplier." class="" }}
+        Supplier
+      {{/icon-stack}}
+    </div>
+  </div>
+  <div class="c-pro-card__cell">
+    <div class="c-card c-card--icon c-card--process c-pro-card__item">
+      {{#> icon-stack src="card_manufacturing.png" alt="Icon of manufacturing." class="" }}
+        Manufacturing
+      {{/icon-stack}}
+    </div>
+  </div>
+  <div class="c-pro-card__cell c-pro-card__cell--ws">
+    <div class="c-card c-card--icon c-card--process c-pro-card__item">
+      {{#> icon-stack src="card_wholesaler.png" alt="Icon of wholesaler." class="" }}
+        Wholesaler
+      {{/icon-stack}}
+    </div>
+  </div>
+  <div class="c-pro-card__cell c-pro-card__cell--ds">
+    <div class="c-card c-card--icon c-card--process c-pro-card__item">
+      {{#> icon-stack src="card_distribution-1.png" alt="Icon of distribution" class="" }}
+        Distribution
+        <div class="c-pro-card__orgx"><span class="show-for-sr">Distribution is also a part of</span>Organization X <span class="show-for-sr">Along with the Customer/Retailer</span></div>
+      {{/icon-stack}}
+    </div>
+  </div>
+  <div class="c-pro-card__cell c-pro-card__cell--cr">
+    <div class="c-card c-card--icon c-card--process c-pro-card__item">
+      {{#> icon-stack src="card_customer.png" alt="Icon of customer." class="" }}
+        Customer/Retail
+      {{/icon-stack}}
+    </div>
+  </div>
+  <div class="c-pro-card__cell ">
+    <div class="c-card c-card--icon c-pro-card__item">
+      {{#> icon-stack src="card_consumer.png" alt="Icon of consumer." class="" }}
+        Consumer
+      {{/icon-stack}}
+    </div>
+  </div>
+
+  <div class="c-pro-card__label">
+    <span class="c-pro-card__text">Downstream</span>
+  </div>
+
+</div>
+
+{{> arrow text="Information Flow" class="" wrap=""}}
+
+{{> arrow text="Financial/Cash Flow" class="-left -center" wrap=""}}
+
+{{/column}}

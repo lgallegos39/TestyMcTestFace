@@ -1,0 +1,69 @@
+///////////////////////////////////////////////////////////////////////
+//
+// REVEAL BASE
+//
+// ///////////////////////////////////////////////////////////////////
+
+
+// VARIABLES
+// ------------------------------------------------------------------
+
+$reveal-background: find-color(white);
+$reveal-width: null;
+$reveal-max-width: null;
+$reveal-padding: null;
+$reveal-border: null;
+$reveal-radius: 6px;
+$reveal-zindex: 1005;
+$reveal-overlay-background: rgba(find-color(primary, darkest), 0.7);
+$reveal-shadow-color: find-color(black);
+
+
+// IMPORT
+// ------------------------------------------------------------------
+@include foundation-reveal;
+
+
+
+// BASE
+// ------------------------------------------------------------------
+
+.reveal {
+  @include get-shadow(
+    $level: 4,
+    $bg: $reveal-shadow-color,
+    $opacity: 0.5
+  );
+
+  &__header {
+    position: relative;
+  }
+
+  &__body {
+    @include gts-box-common;
+    @include clearfix;
+  }
+
+  &--basic {
+    max-width: rem(800px);
+
+  }
+
+}
+
+
+// .reveal--scms {
+//   text-align: center;
+//   background-color: find-color(white);
+//   @include get-shadow(3, black, 0.5);
+//   max-width: rem(600px);
+
+//   .reveal__body {
+
+//     @include breakpoint(medium) {
+//       padding: spacing(lg);
+//     }
+
+//   }
+
+// }

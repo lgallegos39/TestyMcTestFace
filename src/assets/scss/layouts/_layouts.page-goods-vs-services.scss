@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////////////////////////
+//
+// GOODS VS SERVICES
+//
+// ///////////////////////////////////////////////////////////////////
+
+
+
+// STYLES
+// -------------------------------------------------------------------
+
+.l-gvs {
+  overflow: hidden;
+  width: 100%;
+  margin-left: spacing(0.25) * -1;
+
+  &__cell {
+    float: left;
+    overflow: hidden;
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      @include grid-col-size(12);
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      @include grid-col-size(6);
+    }
+
+    &:not(:first-child) {
+      margin-top: spacing(0.25);
+    }
+
+    &:not(:nth-child(4)) {
+      text-align: center;
+    }
+
+  }
+
+  &__text {
+    display: block;
+    background-color: find-color(white);
+    margin-left: spacing(0.25);
+    @include gts-box-common();
+
+    &:not(.l-gvs__text--last) {
+      font-size: font-size(md);
+    }
+
+    &--arrow { background-color: transparent; padding: 0; }
+
+    &--col1 { border-radius: 6px 0 0 0; }
+    &--col2 { border-radius: 0 6px 0 0; }
+    &--last { border-radius: 0 0 6px 6px; min-height: rem(12); }
+
+  }
+
+  &__bar {
+    margin-top: spacing(0.5);
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    background-color: find-color(white);
+    @include gts-box-common(sm);
+    border-radius: 6px;
+
+    @include breakpoint(medium) {
+      width: 150%;
+      transform: translateX(-50%);
+    }
+  }
+
+}

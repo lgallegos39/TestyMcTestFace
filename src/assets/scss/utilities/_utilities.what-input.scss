@@ -1,0 +1,31 @@
+//////////////////////////////////////////////////////////////////////
+//
+// WHAT-INPUT STYLES
+//
+// ///////////////////////////////////////////////////////////////////
+
+// defines :hov, :foc etc... for styles based on device input
+
+[data-whatinput="keyboard"] {
+  a,
+  button,
+  input,
+  select,
+  .tabs-link {
+
+    &:focus {
+      outline: $base-outline-width $base-outline-style $base-outline-color;
+    }
+
+  }
+}
+
+[data-whatinput="mouse"] {
+  * {
+
+    &:focus {
+      outline: 0;
+    }
+
+  }
+}

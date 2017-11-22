@@ -1,0 +1,293 @@
+///////////////////////////////////////////////////////////////////////
+//
+// Misc. Pages
+//
+// ///////////////////////////////////////////////////////////////////
+
+
+
+// STYLES
+// -------------------------------------------------------------------
+.l-chain__heading {
+  @include typeset(4);
+  text-align: center;
+  color: find-color(primary,dark);
+  margin-bottom: spacing(1);
+}
+
+.l-chain__group {
+  @include gts-box-common(
+    $pb: spacing(5)
+  );
+  margin-bottom: 100px;
+  background-color: find-color(primary,darkest);
+  border-radius: 6px;
+  background-image: url(../img/bg-chain.png);
+  background-repeat: repeat-x;
+  background-position: bottom left;
+}
+
+.l-chain__process {
+  box-shadow: $base-shadow-common;
+}
+
+.l-chain__col {
+  // background-color: find-color(white);
+}
+
+.l-chain__col,
+.l-chain__arrow {
+  &:before,
+  &:after {
+    background-color: find-color(white) !important;
+  }
+}
+
+// -------------------------------------------------------------------
+
+.l-cycle-time {
+  position: relative;
+  list-style-type: none;
+  margin: spacing(1) 0 0 0;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    top:0;
+    left: 50%;
+    max-width: rem(200px);
+    min-height: rem(72px);
+    @include gts-box-common;
+    color: find-color(white);
+    border-radius: 6px;
+
+    &:after {
+      content:'';
+      position: absolute;
+      top:100%;
+      left: 50%;
+      box-sizing: content-box;
+      display: block;
+      @include sprite-common;
+      @include sprite(arrow-fwd-hov);
+      border: 3px solid find-color(secondary);
+      background-color: find-color(secondary);
+      border-radius: 50%;
+      z-index: 1;
+      transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    }
+
+    &:nth-child(1) {
+      background-color: find-color(primary,darkest);
+      transform: translateX(-50%);
+
+      &:after {
+        left: 80%;
+        top: 125%;
+        transform: translateY(-50%) translateX(-50%) rotate(60deg);
+      }
+
+    }
+
+    &:nth-child(2) {
+      background-color: find-color(primary,dark);
+      transform: translateY(50%) translateX(-110%);
+
+      &:after {
+        left: 80%;
+        top: -25%;
+        transform: translateY(-50%) translateX(-50%) rotate(60deg);
+      }
+
+    }
+
+    &:nth-child(3) {
+      background-color: find-color(accent,dark);
+      transform: translateY(-50%) translateX(10%);
+    }
+
+
+  }
+
+}
+
+// -------------------------------------------------------------------
+
+// process flow arrow
+.l-pf {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: find-color(white);
+
+  &__item {
+    display: block;
+    margin-bottom: spacing(1);
+    background-color: blue;
+    @include gts-box-common;
+    border-radius: 6px;
+
+    &:nth-child(1) {
+      background-color: find-color(primary);
+    }
+
+    &:nth-child(2) {
+      margin-left: 20%;
+      background-color: find-color(accent);
+    }
+
+    &:nth-child(3) {
+      margin-left: 40%;
+      background-color: find-color(secondary);
+    }
+
+  }
+
+  &__title {
+    @include typeset(3);
+    color: find-color(white);
+  }
+
+}
+
+// -------------------------------------------------------------------
+
+.l-return-pro {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    @include gts-box-common(sm);
+    text-align: center;
+    font-size: font-size(base);
+    margin-bottom: spacing(0.5);
+    border-radius: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+      &:before {
+        display: none;
+      }
+    }
+
+    &:before {
+      content:'';
+      position: absolute;
+      top: calc(100% - 1px);
+      left: 50%;
+      @include triangle(27px 9px,find-color(accent),down);
+      transform: translateX(-50%);
+    }
+
+  }
+
+}
+
+// Generate Colors
+@for $i from 0 to 7 {
+  $icare1-mix: mix(find-color(accent), find-color(primary,dark), percentage($i / (7 - 1)));
+  .l-return-pro__item {
+    &:nth-child(#{$i + 1}) {
+      background-color: $icare1-mix;
+      color: color-pick-contrast($icare1-mix, (find-color(white), find-color(text,dark)));
+
+      &:before {
+        border-top-color: $icare1-mix;
+      }
+
+    }
+  }
+}
+
+
+// -------------------------------------------------------------------
+
+.l-rfc {
+
+  &__col {
+    font-size: font-size(sm);
+    overflow: visible;
+  }
+
+  &__text {
+    margin-left: $box-pad-sm;
+    @include gts-box-common;
+  }
+
+  &__arrow {
+    font-size: font-size(md);
+    display: block;
+    @include gts-box-common;
+    margin-bottom: 0;
+  }
+
+
+}
+
+// Generate Colors
+@for $i from 0 to 4 {
+  $icare1-mix: mix(find-color(primary,darkest), find-color(accent), percentage($i / (4 - 1)));
+  .l-rfc {
+    &__arrow-#{$i + 1} {
+      background-color: $icare1-mix;
+      color: color-pick-contrast($icare1-mix, (find-color(white), find-color(text,dark)));
+    }
+  }
+}
+
+
+// -------------------------------------------------------------------
+$lpfda-mb: spacing(0.25);
+
+.l-pfda {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    padding: spacing(0.625);
+    text-align: center;
+    font-size: font-size(md);
+    margin-bottom: $lpfda-mb;
+    border-radius: 3px;
+
+    &:last-child {
+      margin-bottom: 0;
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content:'';
+      position: absolute;
+      top: calc(100% + #{$lpfda-mb / 2};
+      left: 50%;
+      box-sizing: content-box;
+      display: block;
+      @include sprite-common;
+      @include sprite(arrow-fwd);
+      border: 3px solid find-color(white);
+      background-color: find-color(white);
+      border-radius: 50%;
+      z-index: 1;
+      transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    }
+
+  }
+
+}
+
+// Generate Colors
+@for $i from 0 to 5 {
+  $icare1-mix: mix(find-color(accent), find-color(primary,dark), percentage($i / (5 - 1)));
+  .l-pfda__item {
+    &:nth-child(#{$i + 1}) {
+      background-color: $icare1-mix;
+      color: color-pick-contrast($icare1-mix, (find-color(white), find-color(text,dark)));
+    }
+  }
+}

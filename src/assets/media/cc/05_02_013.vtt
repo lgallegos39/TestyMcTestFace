@@ -1,0 +1,66 @@
+﻿WEBVTT
+
+1
+00:00:00.687 --> 00:00:02.506
+Yet another report that can be viewed
+
+2
+00:00:02.506 --> 00:00:04.409
+from the main screen would be the
+
+3
+00:00:04.409 --> 00:00:07.713
+items with no costs that are greater than zero,
+
+4
+00:00:07.713 --> 00:00:10.330
+but there are no items on hand.
+
+5
+00:00:10.330 --> 00:00:12.310
+This report will give you a summary
+
+6
+00:00:12.310 --> 00:00:15.881
+of all the items in the primary area selected.
+
+7
+00:00:15.881 --> 00:00:20.061
+For this example, we have selected the main search primary.
+
+8
+00:00:20.061 --> 00:00:22.352
+It will list the total number of items,
+
+9
+00:00:22.352 --> 00:00:24.670
+the total amount of compliant items,
+
+10
+00:00:24.670 --> 00:00:27.933
+and the total amount of noncompliant items.
+
+11
+00:00:27.933 --> 00:00:30.642
+The noncompliant items will be items that have no
+
+12
+00:00:30.642 --> 00:00:34.949
+quantities but an associated cost tied to the items.
+
+13
+00:00:34.949 --> 00:00:36.890
+These items can be further drilled down
+
+14
+00:00:36.890 --> 00:00:39.761
+and then corrected by authorized staff.
+
+15
+00:00:39.761 --> 00:00:41.699
+Just select the number itself
+
+16
+00:00:41.699 --> 00:00:43.834
+to get the detailed information.
+

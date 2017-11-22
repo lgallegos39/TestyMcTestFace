@@ -1,0 +1,20 @@
+{{> course-help type="player" }}
+{{#isnt audio "no" }}
+<audio
+  class="mejs__player mejs-player mejs-player--course {{class}}"
+  data-mejsoptions='{
+    "stretching": "responsive",
+    "toggleCaptionsButtonWhenOnlyOne": "true",
+    "defaultAudioHeight": "36",
+    "audioVolume": "vertical"
+  }'>
+  <source src="{{root}}assets/media/audio/{{page}}.mp3" type="audio/mp3">
+  <track src="{{root}}assets/media/cc/{{page}}.vtt" srclang="en" label="English" kind="subtitles" type="text/vtt">
+</audio>
+{{else}}
+  <div class="mejs__container mejs-player mejs-player--course mejs__controls--disabled">
+    <div class="mejs__inner">
+    <div class="mejs__controls" style="position:relative">&nbsp;</div>
+    </div>
+  </div>
+{{/isnt}}
